@@ -1,5 +1,6 @@
 public class OneRowNim2
 {
+
 private int nSticks = 7;
 private int player = 1;
 public OneRowNim2()
@@ -17,15 +18,16 @@ nSticks = sticks ;
 player = starter ;
 }
 
+
+
 public boolean takeSticks ( int num)
 {
 if (num < 1) return false ;
 
-else if ( num > 3) return false ;
-
-else
-
+else if ( num > 4) return false ;
+ 
 {
+
 nSticks = nSticks - num;
 player = 3 - player ;
 return true ;
@@ -53,6 +55,7 @@ if ( nSticks < 1) return getPlayer () ;
 else return 0;
 
 }
+
 
 public void report ()
 {
